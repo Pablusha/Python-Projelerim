@@ -11,7 +11,7 @@ def printMousePos(): #974 564
 def pressMouseDown():
     pyautogui.mouseDown()
 
-def imageGrab():
+def imageGrab(): #Ekran çözünürlüklerine göre burası değişebilir.Kendi ekranınıza göre ayarlayınız yoksa hatayla karşılaşabilirsiniz.
     box = (974,564,1067,739)
     image = ImageGrab.grab(box)
     image = ImageOps.grayscale(image)
