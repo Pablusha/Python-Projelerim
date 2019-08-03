@@ -1,3 +1,5 @@
+#Where can you get the game?
+#You can get game in the AppStore or GooglePlayStore.
 from PIL import ImageGrab,ImageOps
 import pyautogui
 import time
