@@ -13,7 +13,7 @@ def printMousePos(): #974 564
 def pressMouseDown():
     pyautogui.mouseDown()
 
-def imageGrab(): #Kutuyu kendi ekran çözünürlüklerinize göre oluşturunuz aksi takdirde bir hata ile karşılaşabilirsiniz.
+def imageGrab(): #Create the box according to your own screen resolutions, otherwise you may encounter an error.
     box = (974,564,1067,739)
     image = ImageGrab.grab(box)
     image = ImageOps.grayscale(image)
