@@ -18,7 +18,7 @@ def pressLeft():
 def pressRight():
     pyautogui.press('right')
 
-def imageGrab(): #Kutuyu kendi ekran çözünürlüğünüze göre ayarlayınız aksi takdirda bir hata ile karşılaşabilirsiniz.
+def imageGrab(): #Create the box according to your own screen resolutions, otherwise you may encounter an error.
     box = (195,594,342,688)
     image = ImageGrab.grab(box)
     image = ImageOps.grayscale(image)
