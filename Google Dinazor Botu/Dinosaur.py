@@ -14,7 +14,7 @@ def pressSpace():
 def restartGame():
     pyautogui.click(kordinatlar.replayBtn)
 
-def imageGrab(): #Kutuyu kendi ekran çözünürlüklerinize göre oluşturunuz aksi takdirde bir hata ile karşılaşabilirsiniz.
+def imageGrab(): #Create the box according to your own screen resolutions, otherwise you may encounter an error.
     box = (195,372,234,403)                                  
     image = ImageGrab.grab(box)
     image = ImageOps.grayscale(image)
