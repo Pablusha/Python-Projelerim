@@ -5,12 +5,12 @@ import time
 #135 Interval Tiles
 #505 Height
 
-x_baslangic = 185
-y_baslangic = 542
+x_start = 185
+y_start = 542
 
-box = (x_baslangic,y_baslangic,x_baslangic + 438,y_baslangic + 1)
+box = (x_start,y_start,x_start + 438,y_start + 1)
 
-x_kordinatlar = [0,135,271,406] #135 = The x coordinate of the first block - The x of the second block 
+x_coordinates = [0,135,271,406] #135 = The x coordinate of the first block - The x of the second block 
                                 #271 = Interval + Interval + 1(that means 135+136)
                                 #406 = 271 + Interval
 
@@ -30,10 +30,10 @@ def startClicking():
     with mss() as sct:
         while True:
             img = sct.grab(box)
-            for kordinat in x_kordinatlar:
-                if(img.pixel(kordinat,0)[0] < 120): #120 comes from rgb(Red,Green,Blue)
+            for coordinate in x_coordinates:
+                if(img.pixel(coordinate,0)[0] < 120): #120 comes from rgb(Red,Green,Blue)
                     print("Tile Detected")
-                    pyautogui.click(x_baslangic+kordinat,y_baslangic)
+                    pyautogui.click(x_start+coordinate,y_start)
                     break
 
 time.sleep(3)
