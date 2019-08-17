@@ -1,18 +1,20 @@
+#Where you can get the game?
+#http://www.trex-game.skipser.com/
 from PIL import ImageGrab,ImageOps
 import pyautogui
 import time
 from numpy import *
 
-class kordinatlar():
+class coordinates():
     replayBtn = (959, 359)
-    dinazor = (243, 375)
+    dinosaur = (243, 375)
     
 def pressSpace():
     pyautogui.keyDown('space')
     pyautogui.keyUp('space')
 
 def restartGame():
-    pyautogui.click(kordinatlar.replayBtn)
+    pyautogui.click(coordinates.replayBtn)
 
 def imageGrab(): #Create the box according to your own screen resolutions, otherwise you may encounter an error.
     box = (195,372,234,403)                                  
