@@ -29,7 +29,7 @@ def main():
     print("Game Starting...")
     while True:
         print(imageGrab())
-        if(imageGrab() == 22062): #İmageGrab hesaplaması
+        if(imageGrab() == 22062): #İmageGrab calculation result
             pressLeft()
         elif(imageGrab() == 34442):
             pressLeft()
