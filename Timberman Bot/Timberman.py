@@ -4,7 +4,7 @@ import pyautogui
 import time
 from numpy import *
 
-class kordinatlar():
+class coordinates():
     replaybtn = (472,774)
     
 def restartGame():
