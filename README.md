@@ -1,2 +1,2 @@
 # Python-Projelerim
-Python 3 kullanarak flash oyunlara alıştırma yapmak için küçük botlar yazdım.
+Python 3 kullanarak ortaya çıkardığım küçük projeler.
