@@ -1,2 +1,3 @@
-# Python-Projelerim
-Python 3 kullanarak ortaya çıkardığım küçük projeler.
+# PYAUTOGUI Projects
+
+This projects created by using Pyautogui.
