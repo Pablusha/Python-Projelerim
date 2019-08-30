@@ -8,7 +8,7 @@ class coordinates():
     replaybtn = (472,774)
     
 def restartGame():
-    pyautogui.click(kordinatlar.replaybtn)
+    pyautogui.click(coordinates.replaybtn)
 
 restartGame()
 
