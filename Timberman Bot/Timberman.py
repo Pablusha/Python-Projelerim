@@ -4,6 +4,7 @@ import pyautogui
 import time
 from numpy import *
 
+##We are taking the coordinates of Replay Button.
 class kordinatlar():
     replaybtn = (472,774)
     
